@@ -14,18 +14,19 @@ public class BubbleSort {
 
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
-        boolean swapped;
+        boolean trocado;
         for (int i = 0; i < n - 1; i++) {
-            swapped = false;
+            trocado = false;
             for (int j = 0; j < n - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     // Troca arr[j] e arr[j + 1]
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
-                    swapped = true;
+                    trocado = true;
                 }
             }
+
             // Imprime o array a cada iteração
             System.out.print("Iteração " + (i + 1) + ": ");
             printArray(arr, n - i - 1);
@@ -34,7 +35,7 @@ public class BubbleSort {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            if (!swapped) {
+            if (!trocado) {
                 break; // Se nenhum elemento foi trocado, o array está ordenado
             }
         }
