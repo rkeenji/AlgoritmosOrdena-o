@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Menu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] arr = {49, 15, 40, 27, 20, 19, 50, 2, 12, 28, 49, 44, 9, 59, 18, 5, 30, 6, 7, 28};
 
         while (true) {
             System.out.println("====================================");
