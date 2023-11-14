@@ -20,7 +20,7 @@ public class QuickSort {
     }
 
     public static int particao(int[] arr, int low, int high) {
-        int pivo = arr[high];
+        int pivo = arr[high]; // o pivô é o elemento mais à direita da lista
         int i = low - 1;
 
         for (int j = low; j < high; j++) {
